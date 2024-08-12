@@ -1,5 +1,5 @@
-function Card(props) {
-    const classes = "rounded shadow-md " + props.className;
+const Card = (props) => {
+    const classes = "rounded-lg  shadow-md bg-[#FFFFFF] " + props.className;
     
     return <div className={classes}>{ props.children }</div>;
 }
