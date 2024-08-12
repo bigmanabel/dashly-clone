@@ -10,16 +10,18 @@ const UserDropdown = () => {
   };
 
   return (
-    <div ref={ref} className="relative inline-block text-left">
+    <div ref={ref} className="relative inline-block text-left mx-[7.5px]">
       <button
         type="button"
         onClick={toggleDropdown}
-        className="focus:outline-none"
+        className="focus:outline-none w-10 h-10 flex items-center justify-center mx-[3.75]"
       >
         <img
           src="https://d33wubrfki0l68.cloudfront.net/053f2dfd0df2f52c41e903a21d177b0b44abc9b1/1282c/assets/images/profiles/profile-06.jpeg"
           alt="User"
-          className="w-10 h-10 rounded-full border border-gray-300"
+          width="40"
+          height="40"
+          className="w-full h-full rounded-full border border-gray-300"
         />
       </button>
 

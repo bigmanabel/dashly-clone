@@ -1,10 +1,10 @@
 const NotificationsButton = ({ onClick }) => {
   return (
-    <div className="inline-block">
+    <div className="inline-block mx-[3.75px]">
       <button
         type="button"
         onClick={onClick}
-        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md p-[11px]"
+        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md w-10 h-10 flex items-center justify-center"
       >
         <svg
           viewBox="0 0 24 24"

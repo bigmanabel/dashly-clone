@@ -3,7 +3,7 @@ import TotalsLineChart from "./TotalsLineChart";
 
 const TotalCard = () => {
   return (
-    <div className="w-1/2 px-[15px]">
+    <div className="w-1/2 sm:w-full sm:mb-[15px]">
       <Card>
         <div className="flex justify-between p-5">
           <div className="flex-col">

@@ -104,11 +104,11 @@ const ThemeDropdown = () => {
   };
 
   return (
-    <div ref={ref} className="relative inline-block text-left">
+    <div ref={ref} className="relative inline-block text-left w-fit">
       <button
         type="button"
         onClick={toggleDropdown}
-        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md p-[11px] flex items-center"
+        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md w-10 h-10 px-[3.75px] flex items-center justify-center"
       >
         <span className="text-[#7E8790]">{selectedTheme.icon}</span>
       </button>

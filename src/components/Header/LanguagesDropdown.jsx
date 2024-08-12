@@ -44,16 +44,16 @@ const LanguagesDropdown = () => {
   };
 
   return (
-    <div ref={ref} className="relative inline-block text-left">
+    <div ref={ref} className="relative inline-block text-left mx-[7.5px]">
       <button
         type="button"
         onClick={toggleDropdown}
-        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md flex items-center p-[11px]"
+        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md flex items-center w-10 h-10 justify-center mx-[3.75]"
       >
         <img
           src={selectedLanguage.flag}
           alt={selectedLanguage.name}
-          className="w-[18px] h-[18px] rounded-full"
+          className="rounded-full w-[18px] h-[18px]"
         />
       </button>
 

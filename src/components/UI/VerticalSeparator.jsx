@@ -1,5 +1,5 @@
 const VerticalSeparator = () => {
-  return <div className="w-px h-12 bg-[#E9EBEC] mx-4" />;
+  return <div className="h-10 border border-r-[#707070] mx-[7.5px]" />;
 };
 
 export default VerticalSeparator;

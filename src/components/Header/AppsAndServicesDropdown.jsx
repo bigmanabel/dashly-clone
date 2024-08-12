@@ -10,11 +10,11 @@ const AppsAndServicesDropdown = () => {
   };
 
   return (
-    <div ref={ref} className="relative inline-block text-left mx-4">
+    <div ref={ref} className="relative inline-block text-left mx-[7.5px]">
       <button
         type="button"
         onClick={toggleDropdown}
-        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md p-[11px]"
+        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md w-10 h-10 mx-[3.75] flex items-center justify-center"
       >
         <svg
           viewBox="0 0 24 24"

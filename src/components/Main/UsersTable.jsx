@@ -23,8 +23,8 @@ const UsersTable = ({ users }) => {
   };
 
   return (
-    <div className="-mx-5 -mb-5">
-      <table className="w-full mb-0">
+    <div className="overflow-x-auto -mx-5">
+      <table className="w-full mb-0 text-nowrap">
         <thead className="bg-[#F4F5F6] text-[#BCC2C8] text-[12px] w-full">
           <tr>
             <th className="py-2 px-5 text-start">
@@ -43,30 +43,32 @@ const UsersTable = ({ users }) => {
               <td className="py-4 px-5">
                 <input type="checkbox" name="" id="" />
               </td>
-              <td className="py-4 px-5 flex items-center font-bold">
-                <span className="mr-[.46785rem]">
-                  {user.profileImage ? (
-                    <img
-                      src={user.profileImage}
-                      alt=""
-                      className="rounded-full w-[30px] h-[30px]"
-                    />
-                  ) : (
-                    <div
-                      className="rounded-full w-[30px] h-[30px] flex items-center justify-center text-white font-bold"
-                      style={{ backgroundColor: getRandomColor() }}
-                    >
-                      {getInitials(user.fullName)}
-                    </div>
-                  )}
-                </span>
-                {user.fullName}
+              <td className="py-4 px-5">
+                <div className="flex items-center">
+                  <div className="w-[30px] h-[30px] mr-2">
+                    {user.profileImage ? (
+                      <img
+                        src={user.profileImage}
+                        alt=""
+                        className="rounded-full w-full h-full"
+                      />
+                    ) : (
+                      <div
+                        className="rounded-full w-[30px] h-[30px] flex items-center justify-center text-white font-bold"
+                        style={{ backgroundColor: getRandomColor() }}
+                      >
+                        {getInitials(user.fullName)}
+                      </div>
+                    )}
+                  </div>
+                  <span className="flex items-center">{user.fullName}</span>
+                </div>
               </td>
               <td className="py-4 px-5">{user.email}</td>
               <td className="py-4 px-5">{user.userId}</td>
               <td className="py-4 px-5">{user.signedUp}</td>
               <td className="py-4 px-5">
-                <span className="rounded-full px-2">
+                <span className="rounded-full px-2 flex items-center">
                   <span
                     className="rounded-full mr-1 w-[7px] h-[7px] inline-block"
                     style={getStatusColour(user.status)}

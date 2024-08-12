@@ -4,7 +4,7 @@ const SettingsButton = ({ onClick }) => {
       <button
         type="button"
         onClick={onClick}
-        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md p-[11px]"
+        className="focus:outline-none rounded-full bg-[#FFFFFF] shadow-md w-10 h-10 flex items-center justify-center mx-[3.75px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

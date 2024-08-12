@@ -1,5 +1,5 @@
 const Footer = () => {
-    return <footer className="px-[60px] text-[14px] mb-7">&copy; 2024 Code Breakers. All rights reserved.</footer>;
+    return <footer className="text-[14px] px-[15px] mb-8 mt-auto">&copy; 2024 Code Breakers. All rights reserved.</footer>;
 }
 
 export default Footer;

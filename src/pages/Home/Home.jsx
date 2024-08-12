@@ -5,7 +5,7 @@ import SideNav from "../../components/SideNav/SideNav";
 
 const Home = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen sm:flex-col">
       <div className="flex-[1.625] h-full">
         <SideNav />
       </div>

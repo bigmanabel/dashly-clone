@@ -8,31 +8,31 @@ import SalesCard from "./SalesCard";
 
 const Main = () => {
   return (
-    <div className="w-full px-[45px] flex-1 overflow-y-auto mb-5">
-      <h1 className="text-[22px] mb-6 px-[15px]">Dashboard</h1>
-      <div className="flex mb-5">
-        <div className="w-5/12 mb-5">
-          <div className="flex">
+    <div className="w-full px-[45px] flex-1 overflow-y-auto mb-5 sm:px-[15px]">
+      <h1 className="text-[21.233px] mb-[23.55px] font-bold">Dashboard</h1>
+      <div className="flex sm:mb-[15px] sm:flex-col">
+        <div className="w-5/12 mb-5 sm:w-full">
+          <div className="flex sm:flex-col">
             <IncomeCard />
             <ExpenseCard />
           </div>
         </div>
-        <div className="w-7/12">
-          <div className="flex">
+        <div className="w-7/12 sm:w-full">
+          <div className="flex sm:flex-col">
             <TotalCard />
             <PageViewsCard />
           </div>
         </div>
       </div>
-      <div className="flex mb-5">
-        <div className="w-5/12 flex mb-5">
+      <div className="flex mb-5 sm:flex-col">
+        <div className="w-5/12 flex sm:mb-[15px] sm:w-full">
           <ProjectsCard />
         </div>
-        <div className="w-7/12 flex mb-5">
+        <div className="w-7/12 flex sm:w-full">
           <SalesCard />
         </div>
       </div>
-      <div className="mb-5">
+      <div className="sm:w-full">
         <UsersCard />
       </div>
     </div>

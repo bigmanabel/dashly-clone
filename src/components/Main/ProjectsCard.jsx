@@ -129,8 +129,8 @@ const ProjectsCard = () => {
   ];
 
   return (
-    <div className="w-full px-[15px] flex-auto">
-      <Card className="px-5 pt-5">
+    <div className="w-full flex-auto sm:mb-[15px]">
+      <Card className="p-5">
         <div className="flex justify-between items-center flex-row box-border p-5 -mx-5 -mt-5">
           <h2 className="uppercase text-[14px] font-bold">Projects</h2>
         </div>

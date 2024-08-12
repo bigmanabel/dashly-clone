@@ -423,15 +423,33 @@ const SideNav = () => {
   ];
 
   return (
-    <div className="bg-[#0E2238] h-screen text-white p-[30px] overflow-y-auto">
-      <a>
-        <img
-          className="py-[6px] mb-[38px]"
-          src="https://d33wubrfki0l68.cloudfront.net/55307694d1a6b107d2d87c838a1aaede85cd3d84/66f18/assets/images/logo-dark.svg"
-          alt="Dashly Logo"
-        />
-      </a>
-      <div>
+    <div className="bg-[#0E2238] h-screen text-white py-[17.1429px] overflow-y-auto sm:h-fit">
+      <div className="flex items-center justify-between px-[15px]">
+        <a href="/">
+          <img
+            className="py-[6px] px-0"
+            src="https://d33wubrfki0l68.cloudfront.net/55307694d1a6b107d2d87c838a1aaede85cd3d84/66f18/assets/images/logo-dark.svg"
+            alt="Dashly Logo"
+          />
+        </a>
+        <a href="" className="p-0.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </a>
+      </div>
+      <div className="sm:hidden">
         <ul className="space-y-2">
           {navItems.map((navItem, index) => (
             <React.Fragment key={index}>
@@ -484,7 +502,7 @@ const SideNav = () => {
           ))}
         </ul>
       </div>
-      <div className="bg-[#0B4055] rounded-2xl flex flex-col items-center px-[15px] py-5 mt-[50px]">
+      <div className="bg-[#0B4055] rounded-2xl flex flex-col items-center px-[15px] py-5 mt-[50px] sm:hidden">
         <img
           src="https://d33wubrfki0l68.cloudfront.net/562db41ab1c8390d2de557ae8ebd99c6add4f80b/2053e/assets/images/illustrations/upgrade-illustration.svg"
           alt="..."

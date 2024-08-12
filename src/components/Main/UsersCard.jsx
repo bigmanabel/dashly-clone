@@ -222,7 +222,7 @@ const UsersCard = () => {
     const endIndex = Math.min(currentPage * usersPerPage, users.length);
 
   return (
-    <div className="w-full px-[15px] flex-auto mb-5">
+    <div className="w-full flex-auto mb-5">
       <Card className="p-5">
         <div className="flex justify-between items-center flex-row box-border p-5 -mx-5 -mt-5">
           <h2 className="uppercase text-[14px] font-bold">Users</h2>
