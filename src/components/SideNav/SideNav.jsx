@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const SideNav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -37,7 +37,7 @@ const SideNav = () => {
         </svg>
       ),
 
-      items: ["Dashboard 1", "Dashboard 2", "Dashboard 3"],
+      items: ["Default", "E-commerce", "CRM"],
     },
     {
       title: "Pages",
@@ -68,7 +68,18 @@ const SideNav = () => {
           ></rect>
         </svg>
       ),
-      items: ["Page 1", "Page 2", "Page 3"],
+      items: [
+        "Account",
+        "User",
+        "Pricing",
+        "Wizard",
+        "Help Center",
+        "Invoice",
+        "API Keys",
+        "Maintenance",
+        "Connect Apps",
+        "Landing Page",
+      ],
     },
     {
       title: "Chat",
@@ -157,7 +168,6 @@ const SideNav = () => {
           ></line>
         </svg>
       ),
-      items: ["Event 1", "Event 2", "Event 3"],
     },
     {
       title: "Email",
@@ -214,7 +224,7 @@ const SideNav = () => {
           ></path>
         </svg>
       ),
-      items: ["Inbox", "Sent", "Drafts"],
+      items: ["Inbox", "Read Email"],
     },
     {
       title: "Tasks",
@@ -283,7 +293,7 @@ const SideNav = () => {
           </g>
         </svg>
       ),
-      items: ["Task 1", "Task 2", "Task 3"],
+      items: ["Kanban Board", "Task Details"],
     },
     {
       title: "File Manager",
@@ -305,28 +315,52 @@ const SideNav = () => {
           ></path>
         </svg>
       ),
-      items: ["File 1", "File 2", "File 3"],
     },
     {
       title: "Authentication",
       icon: (
         <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
           viewBox="0 0 24 24"
           className="nav-link-icon"
           height="18"
           width="18"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M20.25,9.75v-3a1.5,1.5,0,0,0-1.5-1.5H8.25V3.75a1.5,1.5,0,0,0-1.5-1.5H2.25a1.5,1.5,0,0,0-1.5,1.5v16.3a1.7,1.7,0,0,0,3.336.438l2.351-9.657A1.5,1.5,0,0,1,7.879,9.75H21.75A1.5,1.5,0,0,1,23.2,11.636l-2.2,9A1.5,1.5,0,0,1,19.55,21.75H2.447"
-            fill="none"
             stroke="currentColor"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="1.5"
-          />
+            d="M18.75 9.75H5.25C4.42157 9.75 3.75 10.4216 3.75 11.25V21.75C3.75 22.5784 4.42157 23.25 5.25 23.25H18.75C19.5784 23.25 20.25 22.5784 20.25 21.75V11.25C20.25 10.4216 19.5784 9.75 18.75 9.75Z"
+          ></path>
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M6.75 9.75V6C6.75 4.60761 7.30312 3.27226 8.28769 2.28769C9.27226 1.30312 10.6076 0.75 12 0.75C13.3924 0.75 14.7277 1.30312 15.7123 2.28769C16.6969 3.27226 17.25 4.60761 17.25 6V9.75"
+          ></path>
+          <path
+            stroke="currentColor"
+            strokeWidth="1.5"
+            d="M12 16.5C11.7929 16.5 11.625 16.3321 11.625 16.125C11.625 15.9179 11.7929 15.75 12 15.75"
+          ></path>
+          <path
+            stroke="currentColor"
+            strokeWidth="1.5"
+            d="M12 16.5C12.2071 16.5 12.375 16.3321 12.375 16.125C12.375 15.9179 12.2071 15.75 12 15.75"
+          ></path>
         </svg>
       ),
+      items: [
+        "Sign up",
+        "Sign in",
+        "Reset Password",
+        "Email Verification",
+        "2-step Verification",
+        "Error",
+      ],
     },
     {
       title: "Documentation v1.5",
@@ -348,12 +382,48 @@ const SideNav = () => {
           />
         </svg>
       ),
-      items: ["Guide", "API Reference", "FAQ"],
+    },
+    {
+      title: "Components",
+      icon: (
+        <svg
+          viewBox="0 0 24 24"
+          className="nav-link-icon"
+          height="18"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22.91,6.953,12.7,1.672a1.543,1.543,0,0,0-1.416,0L1.076,6.953a.615.615,0,0,0,0,1.094l10.209,5.281a1.543,1.543,0,0,0,1.416,0L22.91,8.047a.616.616,0,0,0,0-1.094Z"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+          ></path>
+          <path
+            d="M.758,12.75l10.527,5.078a1.543,1.543,0,0,0,1.416,0L23.258,12.75"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+          ></path>
+          <path
+            d="M.758,17.25l10.527,5.078a1.543,1.543,0,0,0,1.416,0L23.258,17.25"
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+          ></path>
+        </svg>
+      ),
     },
   ];
 
   return (
-    <div className="bg-[#0E2238] h-screen text-white p-[30px]">
+    <div className="bg-[#0E2238] h-screen text-white p-[30px] overflow-y-auto">
       <a>
         <img
           className="py-[6px] mb-[38px]"
@@ -364,46 +434,73 @@ const SideNav = () => {
       <div>
         <ul className="space-y-2">
           {navItems.map((navItem, index) => (
-            <li key={index}>
-              <button
-                onClick={() => (navItem.items ? toggleDropdown(index) : null)}
-                className="w-full text-left flex items-center pe-[30px] py-2 hover:bg-[#1A3A5A] focus:outline-none"
-              >
-                <span className="flex items-center flex-grow">
-                  <span className="mr-3">{navItem.icon}</span>
-                  {navItem.title}
-                </span>
-                {navItem.items && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className={`w-4 h-4 transition-transform ${
-                      openDropdown === index ? "rotate-180" : "rotate-0"
-                    }`}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m6 9 6 6 6-6"
-                    />
-                  </svg>
-                )}
-              </button>
-              {navItem.items && openDropdown === index && (
-                <ul className="ml-10 space-y-2">
-                  {navItem.items.map((item, subIndex) => (
-                    <li key={subIndex} className="py-1 hover:text-gray-300">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            <React.Fragment key={index}>
+              {index === navItems.length - 2 && (
+                <hr className="border-t border-[#1A3A5A]" />
               )}
-            </li>
+              <li>
+                <button
+                  onClick={() => (navItem.items ? toggleDropdown(index) : null)}
+                  className="w-full text-left flex items-center pe-[30px] py-2 hover:text-[#00BAC7] text-[14px] text-[#9EA9B4] focus:outline-none"
+                >
+                  <span className="flex items-center flex-grow">
+                    <span className="mr-3">{navItem.icon}</span>
+                    {navItem.title}
+                  </span>
+                  {navItem.items && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className={`w-4 h-4 transition-transform ${
+                        openDropdown === index ? "rotate-180" : "rotate-0"
+                      }`}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m6 9 6 6 6-6"
+                      />
+                    </svg>
+                  )}
+                </button>
+                {navItem.items && openDropdown === index && (
+                  <ul className="ml-10 space-y-2 text-[12px] text-[#9EA9B4]">
+                    {navItem.items.map((item, subIndex) => (
+                      <li
+                        key={subIndex}
+                        className="py-1 hover:text-white flex items-center"
+                      >
+                        <span className="rounded-full bg-[#31CF80] mr-1 w-[5px] h-[5px] inline-block"></span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            </React.Fragment>
           ))}
         </ul>
+      </div>
+      <div className="bg-[#0B4055] rounded-2xl flex flex-col items-center px-[15px] py-5 mt-[50px]">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/562db41ab1c8390d2de557ae8ebd99c6add4f80b/2053e/assets/images/illustrations/upgrade-illustration.svg"
+          alt="..."
+          className="mb-[15px]"
+          width="160"
+          height="160"
+        ></img>
+
+        <h6 className="text-[10px] text-center mb-[23.55px]">
+          Upgrade to explore
+          <br /> <span className="emphasize">premium</span> features
+        </h6>
+
+        <button className="rounded-full bg-[#00BAC7] text-[11px] px-[20px] py-[6px] font-semibold">
+          Upgrade to Business
+        </button>
       </div>
     </div>
   );
