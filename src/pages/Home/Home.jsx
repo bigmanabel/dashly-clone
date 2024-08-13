@@ -5,13 +5,13 @@ import SideNav from "../../components/SideNav/SideNav";
 
 const Home = () => {
   return (
-    <div className="flex h-screen sm:flex-col">
-      <div className="flex-[1.625] h-full">
+    <div className="flex h-screen sm:flex-col lg:flex-row">
+      <div className="lg:w-[275px] h-full">
         <SideNav />
       </div>
 
       <div className="flex-[10.325] bg-[#F8FAFB] flex flex-col">
-        <main className="flex-1 overflow-y-auto">
+        <main className="lg:w-[749px] overflow-y-auto">
           <Header />
           <Main />
           <Footer />

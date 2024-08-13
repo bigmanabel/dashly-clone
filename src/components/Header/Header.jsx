@@ -10,7 +10,7 @@ import VerticalSeparator from '../UI/VerticalSeparator';
 const Header = () => {
   return (
     <header className="py-[30px] px-[45px] sm:px-[15px] sm:py-[30px] flex items-center mb-[15px] w-full bg-[#F8FAFB] sm:justify-end">
-      <div className="w-1/2 sm:hidden">
+      <div className="w-1/2 sm:hidden lg:block">
         <Search />
       </div>
       <div className="flex items-center w-1/2 justify-end">
