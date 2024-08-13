@@ -11,7 +11,7 @@ const Home = () => {
       </div>
 
       <div className="flex-[10.325] bg-[#F8FAFB] flex flex-col">
-        <main className="lg:w-[749px] overflow-y-auto">
+        <main className="lg:w-[749px] xl:w-[1005px] overflow-y-auto">
           <Header />
           <Main />
           <Footer />

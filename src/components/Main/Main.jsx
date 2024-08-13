@@ -8,7 +8,7 @@ import SalesCard from "./SalesCard";
 
 const Main = () => {
   return (
-    <div className="w-full px-[45px] flex-1 overflow-y-auto mb-5 sm:px-[15px]">
+    <div className="w-full px-[45px] flex-1 overflow-y-auto mb-5 sm:px-[15px] xl:px-[45px]">
       <h1 className="text-[21.233px] mb-[23.55px] font-bold">Dashboard</h1>
       <div className="flex sm:mb-[15px] sm:flex-col">
         <div className="w-5/12 mb-5 sm:w-full">
