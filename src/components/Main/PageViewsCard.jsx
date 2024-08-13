@@ -3,7 +3,7 @@ import PageViewsBarChart from "./PageViewsBarChart";
 
 const PageViewsCard = () => {
   return (
-    <div className="w-1/2 sm:w-full md:px-[15px]">
+    <div className="w-1/2 xs:w-full md:px-[15px] md:h-full">
       <Card>
         <div className="flex justify-between p-5">
           <div className="flex-col">
@@ -11,7 +11,7 @@ const PageViewsCard = () => {
               Pageviews
             </h5>
             <h2 className="mb-0 text-[22px] font-bold">123,598</h2>
-            <p className="text-[10px] text-[#AAB1B9]">No additional income</p>
+            <p className="text-[10px] text-[#AAB1B9] text-nowrap">No additional income</p>
           </div>
           <div>
             <PageViewsBarChart />

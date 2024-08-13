@@ -423,7 +423,7 @@ const SideNav = () => {
   ];
 
   return (
-    <div className="bg-[#0E2238] h-screen text-white py-[17.1429px] overflow-y-auto sm:h-fit lg:h-screen lg:p-[30px] scrollbar-thin scrollbar-thumb-[#1A3A5A] scrollbar-track-[#0E2238] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <div className="bg-[#0E2238] h-screen text-white py-[17.1429px] overflow-y-auto xs:h-fit lg:h-screen lg:p-[30px] scrollbar-thin scrollbar-thumb-[#1A3A5A] scrollbar-track-[#0E2238] scrollbar-thumb-rounded-full scrollbar-track-rounded-full lg:w-[275px]">
       <div className="flex items-center justify-between px-[15px]">
         <a href="/">
           <img
@@ -449,7 +449,7 @@ const SideNav = () => {
           </svg>
         </a>
       </div>
-      <div className="sm:hidden lg:block">
+      <div className="xs:hidden lg:block">
         <ul className="space-y-2">
           {navItems.map((navItem, index) => (
             <React.Fragment key={index}>
@@ -502,7 +502,7 @@ const SideNav = () => {
           ))}
         </ul>
       </div>
-      <div className="bg-[#0B4055] rounded-2xl flex flex-col items-center px-[15px] py-5 mt-[50px] sm:hidden lg:block">
+      <div className="bg-[#0B4055] rounded-2xl flex flex-col items-center px-[15px] py-5 mt-[50px] xs:hidden lg:block">
         <img
           src="https://d33wubrfki0l68.cloudfront.net/562db41ab1c8390d2de557ae8ebd99c6add4f80b/2053e/assets/images/illustrations/upgrade-illustration.svg"
           alt="..."

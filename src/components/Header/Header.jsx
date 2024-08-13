@@ -9,8 +9,8 @@ import VerticalSeparator from '../UI/VerticalSeparator';
 
 const Header = () => {
   return (
-    <header className="py-[30px] px-[45px] sm:px-[15px] sm:py-[30px] xl:px-[45px] flex items-center mb-[15px] w-full bg-[#F8FAFB] sm:justify-end">
-      <div className="w-1/2 sm:hidden lg:block">
+    <header className="py-[30px] px-[45px] sm:px-[15px] sm:py-[30px] xl:px-[45px] flex items-center mb-[15px] w-full bg-[#F8FAFB] xs:justify-end">
+      <div className="w-1/2 xs:hidden md:block">
         <Search />
       </div>
       <div className="flex items-center w-1/2 justify-end">

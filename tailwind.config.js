@@ -8,10 +8,14 @@ export default {
   ],
   theme: {
     extend: {
-      gridColumn: {
-        '2.5': '2.5',
-        '9.5': '9.5'
-      }
+      screens: {
+        'xs': '480px',
+        'sm': '576px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1200px',
+        'xxl': '1400px',
+      },
     },
   },
   plugins: [tailwindScrollbar],

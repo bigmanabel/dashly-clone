@@ -14,7 +14,7 @@ const ProjectsTable = ({ projects }) => {
 
   return (
     <div className="-mx-5 -mb-5">
-      <table className="w-full mb-0">
+      <table className="w-full mb-0 text-nowrap overflow-x-auto">
         <thead className="bg-[#F4F5F6] text-[#BCC2C8] text-[12px]">
           <tr>
             <th className="py-2 px-5">#</th>

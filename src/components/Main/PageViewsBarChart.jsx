@@ -40,7 +40,7 @@ const PageViewsBarChart = () => {
     },
   };
 
-  return <Bar data={data} options={options} width={181} height={70} />;
+  return <Bar data={data} options={options} width={85} height={65} />;
 };
 
 export default PageViewsBarChart;

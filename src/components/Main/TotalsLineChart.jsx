@@ -92,7 +92,7 @@ const TotalsLineChart = () => {
     <Line
       data={data}
       options={options}
-      width={181}
+      width={100}
       height={70}
       className="overflow-clip block box-border"
     />

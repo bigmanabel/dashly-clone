@@ -129,7 +129,7 @@ const ProjectsCard = () => {
   ];
 
   return (
-    <div className="w-full flex-auto sm:mb-[15px]">
+    <div className="w-full flex-auto sm:mb-[15px] xxl:px-[15px] xxl:-ml-[15px]">
       <Card className="p-5">
         <div className="flex justify-between items-center flex-row box-border p-5 -mx-5 -mt-5">
           <h2 className="uppercase text-[14px] font-bold">Projects</h2>

@@ -2,7 +2,7 @@ import Card from "../UI/Card";
 
 const ExpenseCard = () => {
   return (
-    <div className="w-1/2 sm:w-full md:px-[15px]">
+    <div className="w-1/2 xs:w-full md:px-[15px]">
       <Card>
         <div className="flex justify-between p-5">
           <div className="flex-col">
