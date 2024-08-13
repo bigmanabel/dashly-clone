@@ -7,7 +7,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridColumn: {
+        '2.5': '2.5',
+        '9.5': '9.5'
+      }
+    },
   },
   plugins: [tailwindScrollbar],
 }

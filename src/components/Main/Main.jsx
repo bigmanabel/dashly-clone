@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div className="w-full px-[45px] flex-1 overflow-y-auto mb-5 sm:px-[15px] xl:px-[45px]">
       <h1 className="text-[21.233px] mb-[23.55px] font-bold">Dashboard</h1>
-      <div className="flex sm:mb-[15px] sm:flex-col">
+      <div className="flex sm:mb-[15px] sm:flex-col min-[1400px]:flex-row">
         <div className="w-5/12 mb-5 sm:w-full">
           <div className="flex sm:flex-col md:flex-row md:-mx-[15px]">
             <IncomeCard />
