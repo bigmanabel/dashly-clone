@@ -12,13 +12,13 @@ const Main = () => {
       <h1 className="text-[21.233px] mb-[23.55px] font-bold">Dashboard</h1>
       <div className="flex sm:mb-[15px] sm:flex-col">
         <div className="w-5/12 mb-5 sm:w-full">
-          <div className="flex sm:flex-col md:flex-row">
+          <div className="flex sm:flex-col md:flex-row md:-mx-[15px]">
             <IncomeCard />
             <ExpenseCard />
           </div>
         </div>
         <div className="w-7/12 sm:w-full">
-          <div className="flex sm:flex-col md:flex-row">
+          <div className="flex sm:flex-col md:flex-row md:-mx-[15px]">
             <TotalCard />
             <PageViewsCard />
           </div>
